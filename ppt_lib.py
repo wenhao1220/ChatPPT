@@ -8,6 +8,19 @@ def remove_number_dot(text):
     result = re.sub(pattern, '', text)
     return result
 
+# layout
+# 0: 標題投影片
+# 1: 標題及內容
+# 2: 章節標題
+# 3: 兩個內容
+# 4: 比較
+# 5: 只有標題
+# 6: 空白
+# 7: 含輔助字幕的內容
+# 8: 含輔助字幕的圖片
+# 9: 標題及直排文字
+# 10: 直排標題及文字
+
 def create_title(prs, title, sub_title):
     # Add a title slide
     title_slide_layout = prs.slide_layouts[0]
